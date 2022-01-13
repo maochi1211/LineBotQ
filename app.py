@@ -221,7 +221,7 @@ def getCarouselMessage(data):
                   "label": "孔廟",
                   "data": json.dumps(data)
                 }
-              }
+              
           ]
     }
     return message
