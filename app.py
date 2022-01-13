@@ -132,8 +132,8 @@ def index():
                 elif action == "get_detail":
                     del data["action"]
                     payload["messages"] = [getTaipei101ImageMessage(),
-                                           getTaipei101LocationMessage(),
-                                           getMRTVideoMessage(),
+                                           getTempleLocationMessage(),
+                                           "uri":"https://wenshuh2004.pixnet.net/blog/post/556382695-%E5%8F%B0%E5%8C%97%E5%B8%82%E5%AD%94%E5%BB%9F"
                                            getCallCarMessage(data)]
                 replyMessage(payload)
 
@@ -287,6 +287,16 @@ def getTaipei101LocationMessage():
     message["longitude"] = 121.5612538
     return message
 
+def getTempleLocationMessage():
+    message = dict()
+    message["type"] = "location"
+    message["title"] = "孔廟"
+    message["address"] = "103台北市大同區大龍街275號"
+    message["latitude"] = 25.0727623
+    message["longitude"] = 121.5161793
+    return message
+
+
 
 def getMRTVideoMessage():
     message = dict()
@@ -308,7 +318,7 @@ def getMRTSoundMessage():
     return message
 
 
-def getTaipei101ImageMessage(originalContentUrl=F"{end_point}/static/2019032607015620.jpg"):
+def getTaipei101ImageMessage(originalContentUrl=F"{end_point}/static/孔廟.jpg"):
     return getImageMessage(originalContentUrl)
 
 
