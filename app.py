@@ -133,7 +133,7 @@ def index():
                     del data["action"]
                     payload["messages"] = [getTaipei101ImageMessage(),
                                            getTempleLocationMessage(),
-                                           "uri":"https://wenshuh2004.pixnet.net/blog/post/556382695-%E5%8F%B0%E5%8C%97%E5%B8%82%E5%AD%94%E5%BB%9F"
+#                                            "uri":"https://wenshuh2004.pixnet.net/blog/post/556382695-%E5%8F%B0%E5%8C%97%E5%B8%82%E5%AD%94%E5%BB%9F"
                                            getCallCarMessage(data)]
                 replyMessage(payload)
 
