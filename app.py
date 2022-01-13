@@ -216,7 +216,7 @@ def getCarouselMessage(data):
                 }
               },
               {
-                "imageUrl": F"{end_point}/static/孔廟.jpg",
+                "imageUrl": F"{end_point}/static/temple.jpg",
                   "type": "postback",
                   "label": "孔廟",
                   "data": json.dumps(data)
@@ -318,7 +318,7 @@ def getMRTSoundMessage():
     return message
 
 
-def getTaipei101ImageMessage(originalContentUrl=F"{end_point}/static/孔廟.jpg"):
+def getTaipei101ImageMessage(originalContentUrl=F"{end_point}/static/temple.jpg"):
     return getImageMessage(originalContentUrl)
 
 
