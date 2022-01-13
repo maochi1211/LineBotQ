@@ -216,10 +216,9 @@ def getCarouselMessage(data):
                 }
               },
               {
-                "imageUrl": F"{end_point}/static/taipei_1.jpeg",
-                "action": {
+                "imageUrl": F"{end_point}/static/孔廟.jpg",
                   "type": "postback",
-                  "label": "台北101",
+                  "label": "孔廟",
                   "data": json.dumps(data)
                 }
               }
@@ -246,7 +245,7 @@ def getLocationConfirmMessage(title, latitude, longitude):
                     {
                         "type": "message",
                         "label": "否",
-                        "text": "否"
+                        "text": "感謝您的使用!"
                       }
           ]
     }
