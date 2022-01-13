@@ -51,6 +51,11 @@ def index():
                     payload["messages"] = [getTaipei101ImageMessage(),
                                            getTaipei101LocationMessage(),
                                            getMRTVideoMessage()]
+                elif text == "播音樂":
+                    payload["messages"] = [getMRTSoundMessage()]
+                    
+                    
+           
                 elif text == "扣打":
                     payload["messages"] = [
                             {
